@@ -1,0 +1,42 @@
+<!-- 1. Type code to add the canvas element here -->
+<canvas id= "myCanvas" width="480" height="320"></canvas>
+
+<img width="1000" src="breakoutPart1_InstructionsA.png"</img>
+<script>
+
+<script>
+// 2. Type code to create a variable that references the canvas element
+var canvas = document.getElementById("myCanvas");
+// 3. Type code to create a variable to store the 2D rendering context
+var ctx = canvas.getContext("2d");
+// 4. Type code to draw a rectangle
+ctx.beginPath();
+ctx.rect(0, 0, 80, 80);
+ctx.fillStyle = "#FF0000"
+ctx.fill();
+ctx.closePath();
+// 5. Type code to draw a rectangle, using a different fillStyle
+//    Note: another option ctx.fillStyle = "rgba(0, 0, 255, .4)";
+ctx.beginPath();
+ctx.rect(80, 80, 80, 80);
+ctx.fillStyle = "blue";
+ctx.fill();
+ctx.closePath();
+// 6. Type code to draw a rectangle, using fillStyle and strokeStyle
+ctx.beginPath();
+ctx.rect(160, 160, 80, 80);
+ctx.fillStyle = "white";
+ctx.fill();
+ctx.strokeStyle = "black";
+ctx.lineWidth = 2;
+ctx.stroke();
+ctx.closePath();
+// PY CHALLENGE (Complete one of these before moving onto Part 2)
+// PY1.1: Draw a cool pattern using rectangles and different colors
+// PY1.2: Fill the whole canvas with stripes or a checker board
+
+</script>
+
+
+
+</body></html>
